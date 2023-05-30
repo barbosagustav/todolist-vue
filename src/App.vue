@@ -6,9 +6,17 @@ const estado = reactive({
   tarefaTemp: '',
   tarefas: [
     {
-      titulo: 'Estudar Vue Js',
-      finalizada: true,
+      titulo: 'Estudar ES6',
+      finalizada: false,
     },
+    {
+      titulo: 'Estudar SASS',
+      finalizada: false,
+    },
+    {
+      titulo: 'Ir para academia',
+      finalizada: true,
+    }
   ]
 })
 
@@ -33,14 +41,13 @@ const getTarefasFiltradas = () => {
 }
 
 const cadastraTarefa = (e) => {
-  e.preventDefault()
+  e.preventDefaut
   const tarefaNova = {
     titulo: estado.tarefaTemp,
     finalizada: false
   }
 
   estado.tarefas.push(tarefaNova);
-  estado.tarefaTemp = ''
 }
 </script>
 
@@ -55,7 +62,7 @@ const cadastraTarefa = (e) => {
     <form @submit="cadastraTarefa" >
       <div class="row">
         <div class="col">
-          <input :value="estado.tarefaTemp" @change="evento => estado.tarefaTemp = evento.target.value" required type="text" placeholder="Digite aqui a descrição da tarefa" class="form-control">
+          <input @change="evento => estado.tarefaTemp = evento.target.value" required type="text" placeholder="Digite aqui a descrição da tarefa" class="form-control">
         </div>
         <div class="col-md-2">
           <button type="submit" class="btn btn-primary">Cadastrar</button>
