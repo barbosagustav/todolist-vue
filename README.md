@@ -1,29 +1,7 @@
-# todo-vue
+# Lista de tarefas com Vue.Js / Confira o projeto <a href="https://todolist-vue-mu.vercel.app/">aqui</a>
+![Captura de Tela (2745)](https://github.com/barbosagustav/todolist-vue/assets/123501971/f1506bf3-8bb9-40c1-8ec3-ef420756fcff)
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+# Tecnologias usadas:
+- HTML5
+- Bootstrap
+- Vue.Js
